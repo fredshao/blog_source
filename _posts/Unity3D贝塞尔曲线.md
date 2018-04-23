@@ -44,7 +44,7 @@ public class BezierCurve {
     /// <param name="_point0">起始点</param>
     /// <param name="_point1">中间点</param>
     /// <param name="_point2">终止点</param>
-    /// <param name="t">当前时间t</param>
+    /// <param name="t">当前时间t(0.0~1.0之间)</param>
     /// <returns></returns>
     public static Vector3 GetCurvePoint(Vector3 _point0, Vector3 _point1, Vector3 _point2, float t) {
         t = Mathf.Clamp(t, 0.0f, 1.0f);
